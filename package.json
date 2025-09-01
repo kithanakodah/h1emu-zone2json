@@ -1,0 +1,22 @@
+{
+    "name": "h1emu-zone2json",
+    "description": "Read and write .zone files for h1emu.",
+    "version": "1.3.4",
+    "main": "./out/zone.js",
+    "author": "Quentin Gruber",
+    "license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/H1emu/h1emu-zone2json"
+    },
+    "scripts": {
+        "install": "npm run build",
+        "build": "tsc -p tsconfig.json"
+    },
+    "dependencies": {
+        "@types/node": "^20.11.26",
+        "h1emu-zone2json": "^1.3.4",
+        "h1z1-dataschema": "^1.5.11",
+        "typescript": "^5.4.2"
+    }
+}
