@@ -10,9 +10,16 @@ Read and write .zone files for H1emu
 
 # Usage
 
-```js
-import { readZone, writeZone } from "h1emu-zone2json";
-import fs from "fs";
-const z1_json = readZone(fs.readFileSync("./Z1.zone"), 0);
-fs.writeFileSync("./myzone.zone", JSON.stringify(writeZone(z1_json)));
-```
+H1Z1 2016 Schema (H1EMU Sept 2025)
+put the Z1.zone (or rename it like below) in your h1emu-zone2json-main directory
+
+Zone to Json:
+
+from command prompt or powershell (from h1emu-zone2json-main directory):
+node zone-to-json.js Z1_H1EMU_LIVE.zone Z1_DV1.json
+
+Json to Zone:
+
+from command prompt of powershell (from h1emu-zone2json-main directory):
+node json-to-zone.js Z1_DV1.json Z1_DV1.zone
+
